@@ -3,7 +3,6 @@ angular.module('ngFlashCards', [])
 
   .controller('cardCtrl', function($scope, $timeout) { 
     var selectedCard = null, MAX_SCORE, WAIT = false;
-    $scope.score = 0;
 
     // Populate Random Card Sequence
     var request = new XMLHttpRequest();
@@ -40,10 +39,13 @@ angular.module('ngFlashCards', [])
       cards = cards || $scope.cards;
       MAX_SCORE = cards.length / 2;
       $scope.cards = [];
+      $scope.score = 0;
 
       while (cards.length > 0) {
         var index = Math.floor(Math.random() * cards.length);
         var card = cards.splice(index,1)[0];
+        card.isFlipped = false;
+        card.isFound = false;
         $scope.cards.push(card);
       }
     }
