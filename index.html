@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='ngFlashCards'>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="ngFlashCards.css">
+  </head> 
+
+  <body ng-controller="cardCtrl">
+
+    <div id="gameContainer">
+      <div>Score: {{score}}</div>
+      <div class="card" ng-class="{'flipped':card.isFlipped}" ng-repeat="card in cards" ng-click="select(card)">
+        <div class="face front"></div> 
+        <div class="face back"> {{card.text}} </div> 
+      </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="ngFlashCards.js"></script> 
+  </body>
+
+</html>
