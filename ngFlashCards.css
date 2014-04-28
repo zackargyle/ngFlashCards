@@ -45,13 +45,14 @@
 #newGame {
 	width: 120px;
 	padding: 10px;
-	margin-top: 10px;
+	margin: 5px;
 	text-align: center;
 	background-color: black;
 	color: white;
+	display: inline-block;
 }
 
 #newGame:hover {
-	color: red;
+	color: hsl(150, 80%, 60%);
 	cursor: pointer;
 }

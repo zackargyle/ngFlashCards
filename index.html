@@ -6,9 +6,9 @@
   </head> 
 
   <body ng-controller="cardCtrl">
-
+    <div id="newGame" ng-click="newGame()">New Game</div>
+      <div style="display:inline-block">Score: {{score}}</div>
     <div id="gameContainer">
-      <div>Score: {{score}}</div>
       <div class="card" ng-class="{'flipped':card.isFlipped}" ng-repeat="card in cards" ng-click="select(card)">
         <div class="face front"></div> 
         <div class="face back"> {{card.text}} </div> 
