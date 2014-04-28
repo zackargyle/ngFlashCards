@@ -44,20 +44,26 @@ angular.module('ngFlashCards', [])
       while (cards.length > 0) {
         var index = Math.floor(Math.random() * cards.length);
         var card = cards.splice(index,1)[0];
-        card.isFlipped = false;
+        flip(card, cards.length + 1);
         card.isFound = false;
         $scope.cards.push(card);
       }
     }
 
-    function incorrect(card) {
-      WAIT = true;
+    function flip(card, i, callback) {
       $timeout(function() {
         card.isFlipped = false;
-        selectedCard.isFlipped = false;
-        selectedCard = null;
         WAIT = false;
-      }, 500);
+        if (callback) callback();
+      }, 10 * (i || 30) );
+    }
+
+    function incorrect(card) {
+      WAIT = true;
+      flip(card);
+      flip(selectedCard, 30, function() {
+        selectedCard = null;
+      });
     }
 
     function correct(card) {

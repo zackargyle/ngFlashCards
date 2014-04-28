@@ -1,97 +1,97 @@
 [
 	{
 		"answer": 0,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Seattle"
 	},
 	{
 		"answer": 0,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Seahawks"
 	},
 	{
 		"answer": 1,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Chicago"
 	},
 	{
 		"answer": 1,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Bears"
 	},
 	{
 		"answer": 2,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Green Bay"
 	},
 	{
 		"answer": 2,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Packers"
 	},
 	{
 		"answer": 3,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Pittsburgh"
 	},
 	{
 		"answer": 3,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Stealers"
 	},
 	{
 		"answer": 4,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Dallas"
 	},
 	{
 		"answer": 4,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Cowboys"
 	},
 	{
 		"answer": 5,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "New England"
 	},
 	{
 		"answer": 5,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Patriots"
 	},
 	{
 		"answer": 6,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "New York"
 	},
 	{
 		"answer": 6,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Jets"
 	},
 	{
 		"answer": 7,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Denver"
 	},
 	{
 		"answer": 7,
-		"isFlipped": false,
+		"isFlipped": true,
 		"isFound": false,
 		"text": "Broncos"
 	}
