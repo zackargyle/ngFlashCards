@@ -52,13 +52,13 @@ angular.module('ngFlashCards', [])
 
     function flip(card, i, callback) {
       $timeout(function() {
-        card.isFlipped = !card.isFlipped;
         WAIT = false;
         if (callback) callback();
       }, 10 * (i || 30) );
     }
 
     function incorrect(card) {
+      card.isFlipped = false;
       WAIT = true;
       flip(card);
       flip(selectedCard, 30, function() {
